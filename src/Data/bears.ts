@@ -156,7 +156,7 @@ const beers: Beer[] = [
             value: 69,
             unit: "celsius",
           },
-          duration: null,
+          duration: 0,
         },
       ],
       fermentation: {
@@ -385,7 +385,7 @@ const beers: Beer[] = [
             value: 65,
             unit: "celsius",
           },
-          duration: null,
+          duration: 0,
         },
       ],
       fermentation: {
