@@ -1,5 +1,6 @@
 import SideNav from "./Containers/SideNav/SideNav"
 import "./App.scss"
+import Main from "./Containers/Main/Main"
 const App = () => {
 
 
@@ -8,6 +9,7 @@ const App = () => {
     <div>
       <h1 className="punk__title">Types of bears</h1>
       <SideNav/>
+      <Main/>
      
     </div>
   )
