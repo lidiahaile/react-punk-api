@@ -10,6 +10,7 @@ const App = () => {
       <h1 className="punk__title">Types of bears</h1>
       <SideNav/>
       <Main/>
+      
      
     </div>
   )
