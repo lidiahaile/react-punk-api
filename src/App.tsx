@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div>
-      <h1 className="punk__title">Types of bears</h1>
+      <h1 className="punk__title">Types of beers</h1>
       <SideNav/>
       <Main/>
       

@@ -1,12 +1,24 @@
+import "./Card.scss"
+
+type CardProps ={
+    imageBeer: string;
+   nameBeer: String;
+   firstBrewed:string;
+   abv:number;
+   ph: number;
+   
 
 
-const  Card = () => {
+}
+
+const  Card = ({ imageBeer, nameBeer, firstBrewed, abv, ph }:CardProps) => {
   return (
-    <div>
-      <img>
-      </img>
-      <h1>Bear Name</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A expedita voluptatem eius asperiores aliquid, accusantium aut modi quaerat obcaecati quo laboriosam exercitationem quisquam delectus tempora repellat cupiditate quidem inventore minus.</p>
+    <div className="card__container" >
+       <img src={imageBeer} alt="Beer's image"/>
+       <h1> {nameBeer}</h1>
+       <p>{firstBrewed} </p>
+       <p>{abv}</p>
+       <p>{ph}</p>
     </div>
   )
 }
