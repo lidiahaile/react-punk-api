@@ -1,5 +1,6 @@
 import beers from "../../Data/beers"
 import Card from "../Card/Card"
+import "./CardList.scss"
 
 
 

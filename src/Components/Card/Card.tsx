@@ -7,6 +7,7 @@ type CardProps ={
    abv:number;
    ph: number;
    
+   
 
 
 }
@@ -14,11 +15,13 @@ type CardProps ={
 const  Card = ({ imageBeer, nameBeer, firstBrewed, abv, ph }:CardProps) => {
   return (
     <div className="card__container" >
-       <img src={imageBeer} alt="Beer's image"/>
+       <img src={imageBeer} alt="Beer's image" className="card__image"/>
+       <div className="card__beerInfo">
        <h1> {nameBeer}</h1>
        <p>{firstBrewed} </p>
        <p>{abv}</p>
        <p>{ph}</p>
+       </div>
     </div>
   )
 }
