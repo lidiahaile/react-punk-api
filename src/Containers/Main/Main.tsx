@@ -1,15 +1,18 @@
 
-import CardList from "../../Components/CardList/CardList"
-import "./Main.scss"
+import { Beer } from "../../Data/types";
+import CardList from "../../Components/CardList/CardList";
+import "./Main.scss";
 
-const Main =() =>{
+type MainProps = {
+  beers: Beer[];
+};
+
+const Main = ({ beers }: MainProps) => {
   return (
-    <div className="main__container">
-        <CardList/>
+    <main className="main__container">
+      <CardList beers={beers} />
+    </main>
+  );
+};
 
-      
-    </div>
-  )
-}
-
-export default Main
+export default Main;

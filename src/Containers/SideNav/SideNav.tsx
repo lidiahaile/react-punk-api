@@ -1,28 +1,22 @@
 import { FormEvent, useState } from "react";
-import SearchBox from "../../Components/SearchBox/SearchBox"
+import SearchBox from "../../Components/SearchBox/SearchBox";
 import "./SideNav.scss"
 
 
 
+const SideNav = ({ handleSearch }: { handleSearch: (term: string) => void }) => {
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
-
-const SideNav =() => {
-
-
-  //a state to deal with the search term
-  const [searchTerm,setSearchTerm] = useState<string>("")
-  
-  //function to handle the user input
-  const handleInput =(event:FormEvent<HTMLInputElement>)=>{
-    const cleanedInput = event.currentTarget.value.toLowerCase()
-    setSearchTerm(cleanedInput)
-  }
-
-
+  const handleInput = (event: FormEvent<HTMLInputElement>) => {
+    const cleanedInput = event.currentTarget.value.toLowerCase();
+    setSearchTerm(cleanedInput);
+    handleSearch(cleanedInput); 
+  };
 
   return (
     <div className="sideNav__container">
-      <SearchBox label="🔍" handleInput={handleInput} searchTerm={searchTerm} />
+       <SearchBox label="Search Beer" handleInput={handleInput} searchTerm={searchTerm} />
+     
     </div>
   )
 }

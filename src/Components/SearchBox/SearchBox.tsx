@@ -13,7 +13,7 @@ const SearchBox = ({ label, searchTerm, handleInput }: SearchBoxProps) => {
   return (
     <div className="search-box">
       <label htmlFor={label} className="search-box__label">
-        {capitalizedLabel}
+      {capitalizedLabel}
       </label>
       <input
         type="text"
