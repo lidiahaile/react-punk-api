@@ -17,10 +17,10 @@ const  Card = ({ imageBeer, nameBeer, firstBrewed, abv, ph }:CardProps) => {
     <div className="card__container" >
        <img src={imageBeer} alt="Beer's image" className="card__image"/>
        <div className="card__beerInfo">
-       <h1> {nameBeer}</h1>
-       <p>{firstBrewed} </p>
-       <p>{abv}</p>
-       <p>{ph}</p>
+       <h1 className="card__beerName"> {nameBeer}</h1>
+       <p>First Brewed: {firstBrewed}</p>
+       <p>ABV: {abv}</p>
+       <p>pH: {ph}</p>
        </div>
     </div>
   )

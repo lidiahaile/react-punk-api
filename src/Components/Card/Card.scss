@@ -1,12 +1,19 @@
-
+ 
 
 .card__container{
     border: 2px solid black;
+    width: 40vw;
+    padding: 5px;
+    margin: 5px;
     
 
 }
 
 
 .card__image{
-    width:40px;
+    width:50%;
+}
+
+.card__beerName{
+    font-size:150%;
 }

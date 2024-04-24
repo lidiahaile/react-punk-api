@@ -12,7 +12,6 @@ const CardList = () => {
    beers.map((beer)=>{
    return(
     <Card imageBeer={beer.image_url} nameBeer={beer.name} firstBrewed={beer.first_brewed} abv={beer.abv} ph={beer.ph} />
-   
    )
     })
 }

@@ -1,7 +1,10 @@
 
-
 .cardList__container{
-    display: flex;
-    flex-direction: column;
+
     background-color:yellow;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
