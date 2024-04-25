@@ -1,7 +1,10 @@
- 
+ $color-one: rgb(233, 212, 96);
+ $color-two: white;
+ $color-three: rgb(104, 74, 19);
+ $color-four: rgb(235, 183, 86);
 
 .card__container{
-    border: 2px solid black;
+   border: 2px solid $color-three;
     width: 40vw;
     padding: 5px;
     margin: 5px;
@@ -16,4 +19,5 @@
 
 .card__beerName{
     font-size:150%;
+    color: $color-three;
 }

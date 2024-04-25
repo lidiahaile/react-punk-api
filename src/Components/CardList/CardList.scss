@@ -1,7 +1,12 @@
+$color-one: rgb(233, 212, 96);
+$color-two: white;
+$color-three: rgb(120, 87, 25);
+$color-four: rgb(235, 183, 86);
+
 
 .cardList__container{
 
-    background-color:yellow;
+    background-color: $color-one;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;

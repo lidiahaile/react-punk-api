@@ -43,8 +43,8 @@ const App = () => {
 
 
   return (
-    <div>
-      <h1 className="punk__title">Types of beers</h1>
+    <div className="punk__nav">
+      <h1 className="punk__title">TYPES OF BEERS</h1>
       <SideNav 
       handleSearch={handleSearch}
       handleAbv={handleAbv}

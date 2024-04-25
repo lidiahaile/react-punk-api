@@ -1,5 +1,23 @@
+$color-one: rgb(233, 212, 96);
+$color-two: white;
+$color-three: rgb(120, 87, 25);
+$color-four: rgb(235, 183, 86);
+
+*{
+   padding:0px;
+   margin: 0px;
+}
+.punk__nav{
+background-color: $color-four;
 
 
+
+
+
+}
 .punk__title{
+   padding: 30px;
    text-align: center;
+   font-size: 10vw;
+   color: $color-three;
 }

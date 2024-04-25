@@ -1,16 +1,21 @@
 
 $color-one: rgb(233, 212, 96);
 $color-two: white;
-$color-three: rgb(221, 153, 26);
-$color-four: rgb(226, 173, 74);
+$color-three: rgb(120, 87, 25);
+$color-four: rgb(210, 161, 71);
+
 
 
 
 
 .sideNav__container{
-    background-color: $color-one;
-    width: 100%;
-    height: 10vh;
+    background-color: $color-four;
+  border: 2px solid $color-three;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        
 }
 
 .sideNav__searchBar{
@@ -18,6 +23,8 @@ $color-four: rgb(226, 173, 74);
    display: flex;
   flex-direction: row;
   justify-content: center;
+  font-size: 19px;
+  color: $color-three;
 }
 
 .sideNav__filters{
@@ -25,8 +32,7 @@ $color-four: rgb(226, 173, 74);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-   
-    
+
    
 }
 
