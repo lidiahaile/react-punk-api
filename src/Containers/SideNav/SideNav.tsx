@@ -36,8 +36,6 @@ const SideNav = ({ handleSearch, handleAbv, handleYear, handlePh, resetFilters}:
       
          
       </div>
-    
-   
     </div>
    
    
