@@ -24,22 +24,18 @@ const SideNav = ({ handleSearch, handleAbv, handleYear, handlePh, resetFilters}:
 
 
 
-  return (
-    <div className="sideNav__container">
-      <SearchBox label="Search Beer " handleInput={handleInput} searchTerm={searchTerm} />
-      
-      <div className="sideNav__filters">
-      <Filter filterName="ABV > 6.0" clicked={handleAbv} />
-      <Filter filterName="Brewed before 2010" clicked={handleYear} />
-      <Filter filterName="pH < 4" clicked={handlePh} />
-      <Filter filterName="Reset Filters " clicked={resetFilters}/>
-      
-         
-      </div>
-    </div>
-   
-   
-   
+return (
+  <div className="sideNav__container">
+     <div className="sideNav__searchBar"> 
+        <SearchBox label="Search Beer " handleInput={handleInput} searchTerm={searchTerm}  /> 
+     </div>
+     <div className="sideNav__filters">
+       <Filter filterName="ABV > 6.0" clicked={handleAbv} />
+       <Filter filterName="Brewed before 2010" clicked={handleYear} />
+       <Filter filterName="pH < 4" clicked={handlePh} />
+       <Filter filterName="Reset Filters " clicked={resetFilters}/>
+     </div>
+  </div>
   )
 }
 
