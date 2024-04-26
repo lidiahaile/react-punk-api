@@ -1,12 +1,8 @@
 import SideNav from "./Containers/SideNav/SideNav"
 import "./App.scss"
 import Main from "./Containers/Main/Main"
-
 import {  useState } from "react";
-
 import beers from "./Data/beers";
-
-
 
 
 
@@ -14,7 +10,6 @@ import beers from "./Data/beers";
 const App = () => {
   const [filteredBeers, setFilteredBeers] = useState(beers);
   
-   
 
   //handle search box
   const handleSearch = (searchTerm: string) => {
@@ -76,14 +71,11 @@ const [beers, setBeers] = useState<Beer[]>([]);
       handlePh={handlePh}
       resetFilters={resetFilters}
       />
-       
+      
        <Main beers={filteredBeers}/>
      </div>
-    
-      
-     
     </div>
-   
+  
    
   )
 }
