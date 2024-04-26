@@ -1,11 +1,17 @@
 import SideNav from "./Containers/SideNav/SideNav"
 import "./App.scss"
 import Main from "./Containers/Main/Main"
-import beers from "./Data/beers";
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
+import { Beer } from "./Data/types";
+
+
+
+
 
 const App = () => {
-  const [filteredBeers, setFilteredBeers] = useState(beers);
+  //const [filteredBeers, setFilteredBeers] = useState(beers);
+  const [filteredBeers, setFilteredBeers] = useState<Beer[]>([]);
 
 
   //handle search box
@@ -30,7 +36,7 @@ const App = () => {
   };
 
   const handlePh = () => {
-    const filteredByPh = beers.filter((beer) => beer.ph < 4);
+    const filteredByPh = beers.filter((beer) => beer.ph < 4.0);
     setFilteredBeers(filteredByPh);
   };
 
@@ -38,8 +44,19 @@ const App = () => {
     setFilteredBeers(beers);
   };
 
-  
-  
+//integration of the API
+const [beers, setBeers] = useState<Beer[]>([]);
+ const getBeers = async () => {
+    const url = "http://localhost:3333/v2/beers";
+    const response = await fetch(url);
+    const data: Beer[] = await response.json();
+    console.log(data);
+    setBeers(data);
+  };
+
+  useEffect(() => {
+    getBeers();
+  }, []);
 
 
   return (
@@ -53,8 +70,9 @@ const App = () => {
       resetFilters={resetFilters}
       />
          
-      
       <Main beers={filteredBeers} />
+     
+
       
      
     </div>

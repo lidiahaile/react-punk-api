@@ -8,6 +8,12 @@ type CardListProps ={
 }
 
 const CardList = ({beers}:CardListProps) => {
+
+
+
+
+
+
   return (
     <div className="cardList__container">
     {
@@ -22,4 +28,3 @@ const CardList = ({beers}:CardListProps) => {
   )
 } 
 export default CardList;
-

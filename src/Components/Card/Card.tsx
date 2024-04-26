@@ -13,6 +13,7 @@ type CardProps ={
 }
 
 const  Card = ({ imageBeer, nameBeer, firstBrewed, abv, ph }:CardProps) => {
+
   return (
     <div className="card__container" >
        <img src={imageBeer} alt="Beer's image" className="card__image"/>
