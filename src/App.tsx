@@ -10,6 +10,7 @@ import beers from "./Data/beers";
 
 
 
+
 const App = () => {
   const [filteredBeers, setFilteredBeers] = useState(beers);
   
@@ -63,9 +64,11 @@ const [beers, setBeers] = useState<Beer[]>([]);
 
 
   return (
+  
     <div className="punk__nav">
       <h1 className="punk__title">TYPES OF BEERS</h1>
       <div className="punk__side-main">
+      
       <SideNav 
       handleSearch={handleSearch}
       handleAbv={handleAbv}
@@ -73,13 +76,15 @@ const [beers, setBeers] = useState<Beer[]>([]);
       handlePh={handlePh}
       resetFilters={resetFilters}
       />
-         
+       
        <Main beers={filteredBeers}/>
      </div>
-
+    
       
      
     </div>
+   
+   
   )
 }
 

@@ -1,5 +1,6 @@
 import "./Card.scss"
 
+
 type CardProps ={
     imageBeer: string;
    nameBeer: String;
