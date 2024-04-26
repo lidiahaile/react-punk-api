@@ -3,7 +3,7 @@ import "./App.scss"
 import Main from "./Containers/Main/Main"
 
 import {  useState } from "react";
-import { Beer } from "./Data/types";
+
 import beers from "./Data/beers";
 
 
@@ -11,9 +11,9 @@ import beers from "./Data/beers";
 
 
 const App = () => {
-  //const [filteredBeers, setFilteredBeers] = useState(beers);
-  const [filteredBeers, setFilteredBeers] = useState<Beer[]>([]);
-
+  const [filteredBeers, setFilteredBeers] = useState(beers);
+  
+   
 
   //handle search box
   const handleSearch = (searchTerm: string) => {
