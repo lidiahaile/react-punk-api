@@ -21,3 +21,11 @@
     font-size:150%;
     color: $color-three;
 }
+
+
+
+@media screen and (min-width: 768px) {
+    .card__container {
+        width:15%;
+    }
+}
