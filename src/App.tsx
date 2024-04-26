@@ -2,8 +2,9 @@ import SideNav from "./Containers/SideNav/SideNav"
 import "./App.scss"
 import Main from "./Containers/Main/Main"
 
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { Beer } from "./Data/types";
+import beers from "./Data/beers";
 
 
 
@@ -44,10 +45,11 @@ const App = () => {
     setFilteredBeers(beers);
   };
 
+  /*
 //integration of the API
 const [beers, setBeers] = useState<Beer[]>([]);
  const getBeers = async () => {
-    const url = "http://localhost:3333/v2/beers";
+    const url = `http://localhost:3333/v2/beers`;
     const response = await fetch(url);
     const data: Beer[] = await response.json();
     console.log(data);
@@ -57,6 +59,7 @@ const [beers, setBeers] = useState<Beer[]>([]);
   useEffect(() => {
     getBeers();
   }, []);
+  */
 
 
   return (
@@ -70,7 +73,7 @@ const [beers, setBeers] = useState<Beer[]>([]);
       resetFilters={resetFilters}
       />
          
-      <Main beers={filteredBeers} />
+       <Main beers={filteredBeers}/>
      
 
       
