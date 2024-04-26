@@ -30,9 +30,9 @@ return (
         <SearchBox label="Search Beer " handleInput={handleInput} searchTerm={searchTerm}  /> 
      </div>
      <div className="sideNav__filters">
-       <Filter filterName="ABV > 6.0" clicked={handleAbv} />
-       <Filter filterName="Brewed before 2010" clicked={handleYear} />
-       <Filter filterName="pH < 4" clicked={handlePh} />
+       <Filter filterName="High ABV " clicked={handleAbv} />
+       <Filter filterName="Classic Range" clicked={handleYear} />
+       <Filter filterName="Acidic" clicked={handlePh} />
        <Filter filterName="Reset Filters " clicked={resetFilters}/>
      </div>
   </div>
